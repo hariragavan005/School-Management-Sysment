@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="4.0" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
+    <servlet>
+        <servlet-name>AddStudentAttendanceRecordSERVLET</servlet-name>
+        <servlet-class>AddStudentAttendanceRecordSERVLET</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AddTeacherRecordSERVLET</servlet-name>
+        <servlet-class>AddTeacherRecordSERVLET</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EditTeacherServlet</servlet-name>
+        <servlet-class>EditTeacherServlet</servlet-class>
+    </servlet>
+     <servlet>
+        <servlet-name>DeleteTeacherServlet</servlet-name>
+        <servlet-class>DeleteTeacherServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    <servlet-name>EditTeacherServlet</servlet-name>
+    <url-pattern>/EditTeacherServlet</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+    <servlet-name>DeleteTeacherServlet</servlet-name>
+    <url-pattern>/DeleteTeacherServlet</url-pattern>
+</servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AddStudentAttendanceRecordSERVLET</servlet-name>
+        <url-pattern>/AddStudentAttendanceRecordSERVLET</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AddTeacherRecordSERVLET</servlet-name>
+        <url-pattern>/AddTeacherRecordSERVLET</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
